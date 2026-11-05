@@ -1,0 +1,4 @@
+INFO:root:Raw CSV loaded successfully
+INFO:root:Raw Records: 58
+INFO:root:Accepted Records: 53
+WARNING:root:Rejected Records: 3

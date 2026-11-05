@@ -1,0 +1,13 @@
+flowchart TD
+    A[(retail_sales.csv)] --> B[Extract and profile]
+    B --> C[Copy input into working DataFrame]
+    C --> D[Fill missing ShippingState with Unknown]
+    D --> E[Remove exact duplicate rows]
+    E --> F[Convert OrderDate, UnitPrice, Quantity]
+    F --> G{Required quantity or price missing?}
+    G -->|Yes| R[Rejected orders + reason]
+    G -->|No| V[Accepted orders]
+    R --> O[CSV and JSON exports]
+    V --> O
+    O --> L[Re-read output CSVs; log counts]
+    L --> P[(pipeline.log)]

@@ -4,8 +4,8 @@
 
 **My journey from Data Analyst to AI Engineer — built in public, one project at a time.**
 
-![Stage](https://img.shields.io/badge/current%20stage-Data%20Analyst-8A6A2F)
-![Projects](https://img.shields.io/badge/projects-1-2E7D32)
+![Stage](https://img.shields.io/badge/current%20stage-Data%20Engineering%20Foundations-8A6A2F)
+![Projects](https://img.shields.io/badge/projects-2-2E7D32)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
 ![Status](https://img.shields.io/badge/status-actively%20building-2E7D32)
@@ -32,14 +32,23 @@ This repo is the practice ground. Every time I learn something new — a library
 | # | Project | Stage | Skills practised | Status |
 |--:|---|---|---|---|
 | 01 | [**Auto Sales — Data Cleaning & Validation**](./01-auto-sales-data-cleaning) | Data Analyst | pandas · deduplication · type validation · quarantine tables · lookup joins · Matplotlib | ✅ Complete |
+| 02 | [**Retail Sales ETL & Data Quality Pipeline**](./02-retail-sales-etl-data-quality) | Data Engineering fundamentals | Python · pandas · CSV/JSON · data-quality checks · logging · exception handling | ✅ Complete |
 
 *New rows are added as I build. Newest project goes at the bottom.*
 
-### Latest build — 01 · Auto Sales
+### Build 01 · Auto Sales
 
 A messy sales export of 2,723 order lines, cleaned with a pipeline where **no row is silently deleted**: invalid rows are quarantined and the totals reconcile to the cent. It answers three questions on shipped sales — top product line, top country and peak month.
 
 ➡ [Read the full README](./01-auto-sales-data-cleaning/README.md)
+
+---
+
+### Latest build — 02 · Retail Sales ETL & Data Quality
+
+A deliberately small synthetic retail input (58 rows) becomes two traceable outputs: 53 accepted orders and 3 quarantined orders, after 2 exact duplicates are removed. Practised Python/pandas transformations, CSV/JSON exports, logging, and documenting data-quality decisions without inventing missing quantities or prices.
+
+➡ [Explore the notebook, architecture and validation notes](./02-retail-sales-etl-data-quality/README.md)
 
 ---
 
@@ -68,7 +77,7 @@ Data-to-AI/
 │   ├── output/
 │   ├── Mini_Project_1.ipynb
 │   └── requirements.txt
-└── 02-…/                              # next build goes here
+└── 02-retail-sales-etl-data-quality/  # Python ETL fundamentals
 ```
 
 Each project folder is self-contained: its own README, data, code and `requirements.txt`.
